@@ -1,0 +1,11 @@
+--- a/test_gnupg.py
++++ b/test_gnupg.py
+@@ -1062,7 +1062,7 @@ def main():
+     init_logging()
+     logger.debug('Python version: %s', sys.version.replace('\n', ' '))
+     tests = suite()
+-    results = unittest.TextTestRunner(verbosity=1).run(tests)
++    results = unittest.TextTestRunner(verbosity=2).run(tests)
+     return not results.wasSuccessful()
+ 
+ 
